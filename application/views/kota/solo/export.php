@@ -71,7 +71,7 @@
         "serverSide": true,
 		"lengthMenu": [ [10, 25, 50, 100, 200, 300, 500, -1], [10, 25, 50, 100, 200, 300, 500, "All"] ],
         "ajax": {
-          "url" : "http://trusur-ispudev.ddns.net:1989/resttrusur/ajax/get_ajax",
+          "url" : "http://ispumaps.id/restserverclientskh/ajax/get_ajax",
           "type" : "POST"
         },
 		dom: "lBfrtip",
