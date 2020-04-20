@@ -10,9 +10,9 @@ class Getdata_m extends CI_model
 	public function __construct()
 	{
 		$this->_client 	= new Client([
-			'base_uri' 	=> 'http://ispumaps.id/restserverclientskh/',
+			'base_uri' 	=> 'http://ispumaps.id/restserverclientskh/'
 			//'base_uri' 	=> 'http://localhost/resttrusur/',
-			'auth'		=> ['admin', 'cHQudHJ1c3VydW5nZ3VsdGVrbnVzYQ==']
+			//'auth'		=> ['admin', 'cHQudHJ1c3VydW5nZ3VsdGVrbnVzYQ==']
 		]);
 	}
 

@@ -16,7 +16,7 @@
 
   <div class="card">
     <div class="card-header">
-      <a href="javascript:history.go(-1)"><button>Lihat Chart</button></a>
+      <a href="<?= site_url() ?>"><button>Lihat Chart</button></a>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
@@ -76,7 +76,13 @@
         },
 		dom: "lBfrtip",
 		buttons: ['excel'],
-		"order": [ [2, "desc"]]
+		"order": [ [2, "desc"]],
+    "columnDefs" : [
+          {
+            "targets" : [5, 6, 7, 8, 9, 10, 11, 12, 13],
+            "orderable" : false
+          }
+        ]
       })
     })
   </script>

@@ -5,8 +5,7 @@ class Export extends CI_Controller {
 
 	public function index()
 	{
-		$data['alldata'] 	= $this->getdata_m->getalldata();
 
-		$this->load->view('kota/solo/export', $data);
+		$this->load->view('kota/solo/sukoharjo_exportdata');
 	}
 }

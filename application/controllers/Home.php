@@ -8,7 +8,8 @@ class Home extends CI_Controller {
 		$data['solorum'] 		= $this->getdata_m->getdatasolorum();
 		$data['sologupit'] 		= $this->getdata_m->getdatasologupit();
 		$data['soloplesan'] 	= $this->getdata_m->getdatasoloplesan();
+		$data['cemsrum'] 		= $this->getdata_cems_m->getcemsdata();
 
-		$this->load->view('kota/solo/solo', $data);
+		$this->load->view('kota/solo/sukoharjo', $data);
 	}
 }
