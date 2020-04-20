@@ -3,6 +3,7 @@
 <head>
   <title>SUKOHARJO</title>
   <link rel="icon" href="<?=base_url()?>assets/dist/img/ptrum.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('assets/dist/css/sidik.css'); ?>">
