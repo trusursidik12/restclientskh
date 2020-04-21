@@ -32,7 +32,7 @@
                     <!-- Cams -->
                       <div class="card-body">
                         <div class="table-responsive">
-                          <table id="camsdata" class="table table-bordered table-striped">
+                          <table id="camsdata" class="table table-bordered table-striped" width="100%">
                             <thead>
                             <tr class="text-center">
                               <th>NO</th>
