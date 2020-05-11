@@ -421,13 +421,13 @@
                                         <td class="color-td-black text-white">BAHAYA<br>>1000</td>
                                       </tr>
                                       <?php foreach($cemsrum as $data) : ?>
-                                      <?php $h2sppmshow = $data['h2s'] / 1500; ?>
+                                      <?php $h2sppmshow = $data['h2s']; ?>
                                       <tr>
                                         <td colspan="5" class="font-table font-weight-bold">Waktu : <?= $data['waktu']; ?></td>
                                       </tr>
                                       <tr>
                                         <td colspan="2" height="60" class="font-table font-weight-bold">
-                                          H2S : <?= round($h2sppmshow, 3); ?>
+                                          H2S : <?= $h2sppmshow; ?>
                                         </td>
                                         <td class="font-table font-weight-bold">
                                           Status :
@@ -473,7 +473,7 @@
                                         <td class="color-td-blue text-white">TIDAK BAIK<br>>12</td>
                                       </tr>
                                       <?php foreach($cemsrum as $data) : ?>
-                                      <?php $cs2ppmshow = $data['cs2'] / 3130; ?>
+                                      <?php $cs2ppmshow = $data['cs2']; ?>
                                       <tr>
                                         <td colspan="2" class="font-table font-weight-bold">Waktu : <?= $data['waktu']; ?></td>
                                       </tr>
@@ -481,7 +481,7 @@
                                         <td height="60" class="font-table font-weight-bold">
                                           <table width="100%">
                                             <tr>
-                                              <td>CS2 : <?= round($cs2ppmshow, 3); ?></td>
+                                              <td>CS2 : <?= $cs2ppmshow; ?></td>
                                               <td style="text-align: right; padding-right: 20px;">Status :</td>
                                             </tr>
                                           </table>
