@@ -6,9 +6,10 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['solorum'] 		= $this->getdata_m->getdatasolorum();
-		$data['sologupit'] 		= $this->getdata_m->getdatasologupit();
+		// $data['sologupit'] 		= $this->getdata_m->getdatasologupit();
 		// $data['soloplesan'] 	= $this->getdata_m->getdatasoloplesan();
 
+		$data['sologupit'] 	= $this->camsdata_m->get_gupit();
 		$data['soloplesan'] 	= $this->camsdata_m->get_plesan();
 
 		$data['cemsrum'] 		= $this->getdata_cems_m->getcemsdata();
