@@ -35,26 +35,26 @@ class Camsdata_m extends CI_model
 	// 	}
 	// }
 
-	// public function getdatasolorum()
-	// {
-	// 	try
-	// 	{
-	// 		$response = $this->_client->request('GET', 'api/solorum', [
-	// 			'query' => [
-	// 				'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA=='
-	// 			],
-	// 		]);
+	public function get_rum()
+	{
+		try
+		{
+			$response = $this->_client->request('GET', 'api/get/data/rum', [
+				'query' => [
+					'trusur_key' => 'VHJ1c3VyVW5nZ3VsVGVrbnVzYV9wVA=='
+				],
+			]);
 
-	// 		$result = json_decode($response->getBody()->getContents(), true);
+			$result = json_decode($response->getBody()->getContents(), true);
 
-	// 		return $result['data'];
-	// 	}
-	// 	catch (GuzzleHttp\Exception\ClientException $e)
-	// 	{
-	// 		$response = $e->getResponse();
-	// 		$responseBodyAsString = $response->getBody()->getContents();
-	// 	}
-	// }
+			return $result['data'];
+		}
+		catch (GuzzleHttp\Exception\ClientException $e)
+		{
+			$response = $e->getResponse();
+			$responseBodyAsString = $response->getBody()->getContents();
+		}
+	}
 
 	public function get_gupit()
 	{
